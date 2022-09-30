@@ -8,7 +8,84 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>My Workspace</h1>
+</style>
+<script type="text/javascript">
+function checkPass()
+{
+    //Store the password field objects into variables ...
+    var password = document.getElementById('password2');
+    var confirm  = document.getElementById('confirm2');
+    //Store the Confirmation Message Object ...
+    var message = document.getElementById('confirm-message2');
+    //Set the colors we will be using ...
+    var good_color = "rgba(0, 128, 0, 0.288)";
+    var bad_color  = "rgba(255, 0, 0, 0.288)";
+    //Compare the values in the password field 
+    //and the confirmation field
+    if(password.value == confirm.value){
+        //The passwords match. 
+        //Set the color to the good color and inform
+        //the user that they have entered the correct password 
+        confirm.style.backgroundColor = good_color;
+        message.style.color           = 'green';
+        message.innerHTML             = 'Passwords Match!';
+    }else{
+        //The passwords do not match.
+        //Set the color to the bad color and
+        //notify the user.
+        confirm.style.backgroundColor = bad_color;
+        message.style.color           = 'red';
+        message.innerHTML             = 'Passwords Do Not Match!';
+    }
+}  
+</script>
+    <div class="home-page">
+        <div class="img">
+        
+        <div class="logo-background">
+            <div class="logo-place">PizzKer</div>
+        </div>
+        </div> 
+        
+            <div class="front-container">
+                
+                <div class="introduction-text">If you whant to be a greate pizza master, just do the next step and create your own account.
+                    <p>Your are the best, just du it!</p> </div>
+                    <form id="commentform" action="http://httpbin.org/post" method="post">
+                    <div class="user-data">
+                        <div class="user-data-left">
+                            <div><label for="commmetn-form-name">First Name</label></div>    
+                            <div><input name="name" type="text" id="comment-form-name" required></div>
+                            
+                            <div><label for="comment-form-email" data-help="Format email@email.com">Email</label></div>
+                            <div><input name="email" placeholder="email@email.com" type="email" id="comment-form-email" required></div>
+                            
+                            <div><label for="password2">Passwort</label></div>
+                            <div><input  name="password" type="password" id="password2" minlength="5" onkeyup="checkPass();" required></div>
+                        </div>
+                        <div class="user-data-right">
+                            <div><label for="comment-form-surname">Last Name</label></div>
+                            <div><input name="surname" type="text" id="comment-form-surname" required></div>             
+                            
+                            <div><label for="comment-form-phone">Phone Number</label></div>
+                            <div><input name="tel" placeholder="+4954..." type="tel" id="comment-form-phone" pattern="[+]{1}[0-9]{11,14}" data-help="Format +4912..." required ></div>                  
+                            
+                            <div><label for="confirm2">Repeat Passwort</label></div>
+                            <div><input name="confirm" type="password" id="confirm2" minlength="5" onkeyup="checkPass();" required></div>  
+                            <span id="confirm-message2" class="confirm-message"></span> 
+                        </div>        
+                    </div>
+                    
+                <div class="bottom-container">  
+                    <div class="button-style"> <button type="submit">Create an Account</button></div>
+                </form>   
+                    <div class="bottom"> Already have an account? <a href="#"> Log in</a></div>
+                
+                </div>
+            </div>    
+        
+        
+    </div>
 
     
 </body>
