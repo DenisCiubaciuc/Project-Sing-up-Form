@@ -1,3 +1,116 @@
-head{
-    background-color: black;
+body{
+    
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.img{
+    background-image: url(pizza01.jpg);
+    background-size: cover;    
+}
+
+.home-page{
+display: flex;
+}
+
+
+
+.logo-background{
+    background-color: rgba(255, 0, 0, 0.265) ;
+    padding: 10px; 
+    margin-top: 337px;
+    margin-bottom: auto;   
+}
+
+.logo-place{
+    color: white;
+    font-size: 3em;
+    padding: 10px 130px;
+}
+
+.introduction-text{
+    padding: 110px 10px;
+    font-size: 2em;
+}
+
+.front-container{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.user-data{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 15px 10px -15px #111
+
+}
+
+.user-data-left, .user-data-right{
+    margin: 10px 40px;
+}
+
+input[type=text],input[type=email],input[type=tel],input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 8px ;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+  .bottom{
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-size: 20px;
+  }
+
+  .button-style{
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+
+  button{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 25px;
+       
+  }
+
+  button:hover{
+    box-shadow: 0px 0px 3px red;
+  }
+
+    /* some input style */
+
+  input:valid{
+    border-color: green;
+  }
+
+
+  input:invalid{
+    border-color: red;
+  }
+
+  input:valid:hover{
+    border-color: green;
+    background-color: rgba(0, 128, 0, 0.288);
+  }
+
+  
+  input:invalid:hover{
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.288);
+  }
+   
+  .confirm-message{
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+}
+
